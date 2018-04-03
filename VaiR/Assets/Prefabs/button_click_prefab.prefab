@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23984642165132644}
   - component: {fileID: 114446951213822372}
   - component: {fileID: 114032644396656768}
+  - component: {fileID: 122580761534700298}
   m_Layer: 0
   m_Name: button_click_prefab
   m_TagString: Untagged
@@ -139,3 +140,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClickedText: {fileID: 0}
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  incorrectColor: {r: 1, g: 0, b: 0, a: 1}
+  transparentColor: {r: 0, g: 0, b: 0, a: 0}
+  correctSound: {fileID: 82027372439715164, guid: 4b1ee93937307094ba9663127881cc2a,
+    type: 2}
+  incorrectSound: {fileID: 82007772601619370, guid: 694eb4306fe819942a4abd8f620ab234,
+    type: 2}
+--- !u!122 &122580761534700298
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341491277283892}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_Size: 2

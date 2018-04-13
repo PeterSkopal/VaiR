@@ -20,7 +20,8 @@ public class Global : MonoBehaviour
 				{"battery_guard", "Next: BATTERY switch Guard closed"},
 				{"electric_hydraulic_pumps", "Next: ELECTRIC HYDRAULIC PUMPS switches OFF"},
 				{"landing_gear", "Next: LANDING GEAR lever DN"},
-				{"grd_power","Next: GRD POWER switch – ON"},
+                {"landing_gear_lights", "check LANDING GEAR INDICATORS"},
+                {"grd_power","Next: GRD POWER switch – ON"},
 				{"light_set","Next: LIGHT SET"},
 				{"overheat_dtc_1","Next: OVERHEAT DETECTOR switches 1 – NORMAL"},
 				{"overheat_dtc_2","Next: OVERHEAT DETECTOR switches 2 – NORMAL"},
@@ -33,7 +34,7 @@ public class Global : MonoBehaviour
 				{"master_fire_warn","Next: Master FIRE WARN light – Push"},
 				{"apu_start","Next: APU – Start if needed."},
 				{"apu_gen_bus_2","Next: APU GENERATOR bus switches 2 - ON"},
-				{"apu_gen_bus_3}","Next: APU GENERATOR bus switches 3 - ON"}};
+				{"apu_gen_bus_3","Next: APU GENERATOR bus switches 3 - ON"}};
 			break;
 		default:
 			print ("Incorrect parameter");

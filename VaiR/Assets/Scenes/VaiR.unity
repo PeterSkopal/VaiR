@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4373506, g: 0.40735012, b: 0.37533316, a: 1}
+  m_IndirectSpecularColor: {r: 0.43670833, g: 0.4075417, b: 0.37671438, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -188,6 +188,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -284,6 +289,7 @@ GameObject:
   - component: {fileID: 32924017}
   - component: {fileID: 32924021}
   - component: {fileID: 32924022}
+  - component: {fileID: 32924023}
   m_Layer: 0
   m_Name: thrust
   m_TagString: Untagged
@@ -355,7 +361,7 @@ Transform:
   m_LocalScale: {x: 0.10000001, y: 0.02, z: 0.033333335}
   m_Children: []
   m_Father: {fileID: 1837933112}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &32924021
 MonoBehaviour:
@@ -402,8 +408,20 @@ MonoBehaviour:
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
+  SelectScenarioCanvas: {fileID: 369837684}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
+--- !u!122 &32924023
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32924016}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_Size: 2
 --- !u!1 &120213958
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +517,7 @@ GameObject:
   - component: {fileID: 158217960}
   - component: {fileID: 158217964}
   - component: {fileID: 158217965}
+  - component: {fileID: 158217966}
   m_Layer: 0
   m_Name: landing_gear
   m_TagString: Untagged
@@ -617,8 +636,20 @@ MonoBehaviour:
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
+  SelectScenarioCanvas: {fileID: 369837684}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
+--- !u!122 &158217966
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158217959}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_Size: 2
 --- !u!1 &167093108
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +664,7 @@ GameObject:
   - component: {fileID: 167093112}
   - component: {fileID: 167093111}
   - component: {fileID: 167093110}
+  - component: {fileID: 167093115}
   m_Layer: 0
   m_Name: battery_guard
   m_TagString: Untagged
@@ -701,6 +733,7 @@ MonoBehaviour:
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
+  SelectScenarioCanvas: {fileID: 369837684}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
 --- !u!23 &167093112
@@ -759,6 +792,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1258238730}
   m_GameObject: {fileID: 167093108}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!122 &167093115
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 167093108}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_Size: 2
 --- !u!82 &169858964 stripped
 AudioSource:
   m_PrefabParentObject: {fileID: 82027372439715164, guid: 4b1ee93937307094ba9663127881cc2a,
@@ -998,6 +1042,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -1434,6 +1483,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
     type: 2}
   m_PrefabInternal: {fileID: 1793557811}
+--- !u!114 &484184158 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501761493}
+  m_Script: {fileID: 11500000, guid: 99cfb00d8802be6408525de42bd86f96, type: 3}
 --- !u!1 &523584250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1644,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -1751,6 +1811,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -1772,6 +1837,7 @@ GameObject:
   - component: {fileID: 747192505}
   - component: {fileID: 747192509}
   - component: {fileID: 747192508}
+  - component: {fileID: 747192510}
   m_Layer: 0
   m_Name: thrust_2
   m_TagString: Untagged
@@ -1790,7 +1856,7 @@ Transform:
   m_LocalScale: {x: 0.03870211, y: 0.02, z: 0.033333335}
   m_Children: []
   m_Father: {fileID: 1837933112}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &747192505
 MeshRenderer:
@@ -1890,8 +1956,20 @@ MonoBehaviour:
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
+  SelectScenarioCanvas: {fileID: 369837684}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
+--- !u!122 &747192510
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747192503}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_Size: 2
 --- !u!1 &774508153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2124,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -2720,6 +2803,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -3068,6 +3156,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -3146,6 +3239,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -3270,6 +3368,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114104324678187532, guid: 51539819dad244c27be1178ae1ce4147,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51539819dad244c27be1178ae1ce4147, type: 2}
   m_IsPrefabParent: 0
@@ -3574,6 +3677,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -3587,19 +3695,29 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1837933112}
+    m_TransformParent: {fileID: 1816135721}
     m_Modifications:
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.072
+      value: -1.9569072
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.22300003
+      value: 6.33
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.44600004
+      value: -13.342481
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3619,7 +3737,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1341491277283892, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_Name
@@ -3627,11 +3745,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.030000003
+      value: 0.9000001
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.030000003
+      value: 0.9000001
       objectReference: {fileID: 0}
     - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
         type: 2}
@@ -3640,7 +3758,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4285049362112930, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.012000002
+      value: 0.36000007
       objectReference: {fileID: 0}
     - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
         type: 2}
@@ -3657,6 +3775,62 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].eventID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 484184158}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonLookedAt
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_TypeName
+      value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114032644396656768, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -4224,6 +4398,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -4307,6 +4486,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -4533,6 +4717,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -4578,8 +4767,9 @@ Transform:
   - {fileID: 476869412}
   - {fileID: 1585585749}
   - {fileID: 840119473}
+  - {fileID: 240904798}
   m_Father: {fileID: 1837933112}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1819485929
 GameObject:
@@ -4750,6 +4940,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -4835,7 +5030,6 @@ Transform:
   m_LocalPosition: {x: -8.74, y: 2.67, z: -14.53}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
-  - {fileID: 240904798}
   - {fileID: 32924020}
   - {fileID: 747192504}
   - {fileID: 1816135721}
@@ -4857,6 +5051,7 @@ MonoBehaviour:
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
+  SelectScenarioCanvas: {fileID: 0}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
 --- !u!1 &1880634836
@@ -5480,6 +5675,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0
@@ -5558,6 +5758,11 @@ Prefab:
       propertyPath: incorrectSound
       value: 
       objectReference: {fileID: 1538609599}
+    - target: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
+        type: 2}
+      propertyPath: SelectScenarioCanvas
+      value: 
+      objectReference: {fileID: 369837684}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4a9bb1eb0de44bc0a76a722344cce8c, type: 2}
   m_IsPrefabParent: 0

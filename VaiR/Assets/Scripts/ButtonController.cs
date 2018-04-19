@@ -55,6 +55,10 @@ public class ButtonController : MonoBehaviour {
     {
         MenuCanvasController.Hide(SelectModeCanvas);
         MenuCanvasController.Show(SelectScenarioCanvas);
+		(GameObject.Find(Global.currentScenario[Global.count,0]).GetComponent("Halo") as Behaviour).enabled = false;
+		Global.count = 0;
+		Global.incorrectClickCounter = 0;
 		buttonClickedText.text = "Select a new scenario!";
+
     }
 }

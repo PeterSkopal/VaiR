@@ -16,7 +16,7 @@
 
     public void ButtonClicked(string name)
     {	
-        if (Global.currentScenario == null || (Global.currentScenario.Length / 2) == Global.count)
+        if (Global.currentScenario == null || (Global.currentScenario.Length / Global.itemSize) == Global.count)
         {
             buttonClickedText.text = "Select a new scenario!";
         }
@@ -33,9 +33,7 @@
                 } else {
                     buttonClickedText.text = Global.currentScenario[Global.count, 2];
                 }
-                Renderer rend = GetComponent<Renderer>();
-                (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
-                Global.incorrectClickCounter = 0;
+				lightOffButton (currentName);
                 correctClick(name);
             }
             else
@@ -89,6 +87,12 @@
             yield return new WaitForSecondsRealtime(0.01f);
         }
     }
+
+	public void lightOffButton(string currentName){
+		Renderer rend = GetComponent<Renderer>();
+		(GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
+		Global.incorrectClickCounter = 0;
+	}
 
 	public void lightUpButton(string currentName){
 		buttonClickedText.text = "Look Around to find a hint!";

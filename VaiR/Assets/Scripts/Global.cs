@@ -8,6 +8,7 @@ public class Global : MonoBehaviour
 	
 	public static int count = 0;
 	public static int incorrectClickCounter = 0;
+	public static int itemSize = 3;
 	public static string[,] currentScenario;
 	public static string mode;
 	public Text buttonClickedText;
@@ -110,7 +111,16 @@ public class Global : MonoBehaviour
 				"Verify that the ENG 2 OVERHEAT light stay illuminated"},
 
 				{"ext_test", "button",
-				"Next: EXTINGUISHER TEST switch – Check"},//här
+				"Next: EXTINGUISHER TEST Switch - Position to 1 and hold"},
+				
+				{"test_lights", "gaze",
+				"Verify that the three green extinguisher test lights are extinguished"},
+				
+				{"ext_test", "button",
+				"Next: EXTINGUISHER TEST Switch - Position to 2 and hold"},
+				
+				{"test_lights", "gaze",
+				"Verify that the three green extinguisher test lights are extinguished"},
 
 				{"detector_select_switches", "button",
 				"Next: DETECTOR SELECT switches – NORM"},
@@ -118,8 +128,14 @@ public class Global : MonoBehaviour
 				{"cargo_fire_test", "button",
 				"Next: TEST switch – Push"},
 
+				{"master_fire_warn", "gaze",
+				"Verify that the master FIRE WARN lights are illuminated"},
+
 				{"master_fire_warn", "button",
 				"Next: Master FIRE WARN light – Push"},
+
+				{"master_fire_warn", "gaze",
+				"Verify that the master FIRE WARN lights are extinguished."},//här
 
 				{"apu_start", "button",
 				"Next: APU – Start if needed."},

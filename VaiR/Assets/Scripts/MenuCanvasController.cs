@@ -7,7 +7,7 @@ public class MenuCanvasController : MonoBehaviour {
 	public Canvas startCanvas;
 	// Use this for initialization
 	void Start () {
-		startCanvas.transform.position = new Vector3 (0, 0, 1000);
+		startCanvas.transform.position = new Vector3 (0, 0, 10000);
 	}
 
 	public static void Show (Canvas canvas) {

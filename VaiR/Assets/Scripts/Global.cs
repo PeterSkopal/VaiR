@@ -67,14 +67,50 @@ public class Global : MonoBehaviour
 				{"master_caution", "gaze",
 				"Verify that the MASTER CAUTION lights are illuminated"},
 
+				{"annunciator", "gaze",
+				"Verify that the OVHT/DET annunciator is illuminated"},
+
+				{"fault_light", "gaze",
+				"Verify that the FAULT light is illuminated"},
+
+				{"apu_det_inop_light", "gaze",
+				"Verify that the APU DET INOP light is illuminated"},
+
 				{"overheat_test", "button",
 				"Next: TEST switch – Hold to OVHT/FIRE"},
+
+				{"master_fire_warn", "gaze",
+				"Verify that the master FIRE WARN lights are illuminated"},
+
+				{"master_caution", "gaze",
+				"Verify that the MASTER CAUTION lights are illuminated"},
+
+				{"annunciator", "gaze",
+				"Verify that the OVHT/DET annunciator is illuminated"},
 
 				{"master_fire_warn", "button",
 				"Next: Master FIRE WARN light – Push"},
 
+				{"master_fire_warn", "gaze",
+				"Verify that the master FIRE WARN lights are extinguished."},
+
+				{"fire_1_apu", "gaze",
+				"Verify that the engine No. 1, APU fire switches stays illuminated"},
+
+				{"fire_2_apu", "gaze",
+				"Verify that the engine No. 2, APU fire switches stays illuminated"},
+				
+				{"wheel_well", "gaze",
+				"Verify that the WHEEL WELL fire warning light is illuminated"},
+				
+				{"eng_1_overheat", "gaze",
+				"Verify that the ENG 1 OVERHEAT light stay illuminated"},
+				
+				{"eng_2_overheat", "gaze",
+				"Verify that the ENG 2 OVERHEAT light stay illuminated"},
+
 				{"ext_test", "button",
-				"Next: EXTINGUISHER TEST switch – Check"},
+				"Next: EXTINGUISHER TEST switch – Check"},//här
 
 				{"detector_select_switches", "button",
 				"Next: DETECTOR SELECT switches – NORM"},

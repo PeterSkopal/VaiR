@@ -7,6 +7,7 @@ public class ButtonController : MonoBehaviour {
 	Button button;
 	public Canvas SelectModeCanvas;
 	public Canvas SelectScenarioCanvas;
+	public Text buttonClickedText;
 	// Use this for initialization
 	void Start () {
 		button = GetComponent<Button>();
@@ -54,5 +55,6 @@ public class ButtonController : MonoBehaviour {
     {
         MenuCanvasController.Hide(SelectModeCanvas);
         MenuCanvasController.Show(SelectScenarioCanvas);
+		buttonClickedText.text = "Select a new scenario!";
     }
 }

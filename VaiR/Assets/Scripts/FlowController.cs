@@ -43,9 +43,7 @@
                 Global.incorrectClickCounter = Global.incorrectClickCounter + 1;
                 if (Global.incorrectClickCounter > 2)
                 {
-                    buttonClickedText.text = "Look Around to find a hint!";
-                    Renderer rend = GetComponent<Renderer>();
-                    (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = true;
+					lightUpButton (currentName);
                 }
                 incorrectClick(name);
             }
@@ -61,7 +59,18 @@
     public void correctClick(string buttonName) {
 		correctSound.Play();
         StartCoroutine(BlinkButton(buttonName, true));
+
+		if (Global.currentScenario [Global.count, 1].Equals ("gaze")) {
+			StartCoroutine (GazeHelp (Global.currentScenario [Global.count, 0]));
+		}
     }
+
+	IEnumerator GazeHelp(string currentName){
+		yield return new WaitForSecondsRealtime(7f);
+		if (Global.currentScenario [Global.count, 0].Equals (currentName)) {
+			lightUpButton (currentName);
+		}
+	}
 
     IEnumerator BlinkButton(string buttonName, bool clickCorrect) {
         Renderer rend = GetComponent<Renderer>();
@@ -81,27 +90,33 @@
         }
     }
 
+	public void lightUpButton(string currentName){
+		buttonClickedText.text = "Look Around to find a hint!";
+		Renderer rend = GetComponent<Renderer>();
+		(GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = true;
+	}
+
     public void ButtonLookedAt(string name)
     {
-        StartCoroutine(GazeCheck(name));
+        if (Global.currentScenario != null) {
+            StartCoroutine(GazeCheck(name));
+        }
     }
 
-    IEnumerator GazeCheck(string name) { 
+    IEnumerator GazeCheck(string name) {
         string currentName = Global.currentScenario[Global.count, 0];
-        if (name.Equals(currentName))
+        bool ifGaze = Global.currentScenario[Global.count, 1] == "gaze";
+        if (name.Equals(currentName) && ifGaze)
         {
             yield return new WaitForSecondsRealtime(1f);
-       
-                Global.count = Global.count + 1;
-                buttonClickedText.text = Global.currentScenario[Global.count, 2];
-                Renderer rend = GetComponent<Renderer>();
-                (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
-                Global.incorrectClickCounter = 0;
-                correctClick(name);
-                print("hello from button looked at: " + name);
-                yield return new WaitForSecondsRealtime(1f);
-            
+    
+            Global.count = Global.count + 1;
+            buttonClickedText.text = Global.currentScenario[Global.count, 2];
+            Renderer rend = GetComponent<Renderer>();
+            (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
+            Global.incorrectClickCounter = 0;
+            correctClick(name);
         }
-}
+    }
 
 }

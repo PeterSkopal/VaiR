@@ -15,7 +15,7 @@ public class DropDownController : MonoBehaviour {
             Global.setScenario(m_Dropdown.value);
             Global.count = 0;
 			MenuCanvasController.Hide(canvas);
-			buttonClickedText.text = Global.currentScenario [0, 1];
+			buttonClickedText.text = Global.currentScenario [0, 2];
         });
     }
 }

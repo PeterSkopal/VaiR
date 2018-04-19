@@ -31,7 +31,7 @@
                     buttonClickedText.color = correctColor;
                     MenuCanvasController.Show(SelectScenarioCanvas);
                 } else {
-                    buttonClickedText.text = Global.currentScenario[Global.count,1];
+                    buttonClickedText.text = Global.currentScenario[Global.count, 2];
                 }
                 Renderer rend = GetComponent<Renderer>();
                 (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
@@ -93,7 +93,7 @@
             yield return new WaitForSecondsRealtime(1f);
        
                 Global.count = Global.count + 1;
-                buttonClickedText.text = Global.currentScenario[Global.count, 1];
+                buttonClickedText.text = Global.currentScenario[Global.count, 2];
                 Renderer rend = GetComponent<Renderer>();
                 (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
                 Global.incorrectClickCounter = 0;

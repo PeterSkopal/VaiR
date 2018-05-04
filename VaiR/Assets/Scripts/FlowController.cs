@@ -7,48 +7,63 @@
 	public class FlowController : MonoBehaviour {
 
     public Text buttonClickedText;
+    public Text countCanvasText;
     public Color correctColor = Color.green;
     public Color incorrectColor = Color.red;
     public Color transparentColor = Color.clear;
+    public Color blackColor = Color.black;
     public Canvas SelectScenarioCanvas;
+    public Canvas ProgressCanvas;
 
 	public AudioSource correctSound, incorrectSound;
 
-    public void ButtonClicked(string name)
-    {	
-        if (Global.currentScenario == null)
-        {
+    void Start () {
+        ProgressCanvas.enabled = false;
+    }
+
+    public void ButtonClicked(string name) {
+        if (Global.currentScenario == null) {
             buttonClickedText.text = "Select a new scenario!";
-        }
-        else
-        {
-            string currentName = Global.currentScenario[Global.count,0];
-            if (name.Equals(currentName))
-            {
-                if ((Global.currentScenario.Length / Global.itemSize) - 1 == Global.count) {
-                    buttonClickedText.text = "Good Job! Select a new scenario!";
-                    buttonClickedText.color = correctColor;
-                    MenuCanvasController.Show(SelectScenarioCanvas);
-                } else {
+        } else {
+            if (!gameIsDone()) {
+                string currentName = Global.currentScenario[Global.count,0];
+                bool isClickButton = Global.currentScenario [Global.count, 1].Equals ("button");
+                if (name.Equals(currentName) && isClickButton) {
                     Global.count = Global.count + 1;
-                    buttonClickedText.text = Global.currentScenario[Global.count, 2];
+                    setCanvasTexts();
+                    lightOffButton(currentName);
+                    correctClick(name);
+                } else {
+                    incorrectClick(name, currentName);
                 }
-				lightOffButton (currentName);
-                correctClick(name);
-            }
-            else
-            {
-                Global.incorrectClickCounter = Global.incorrectClickCounter + 1;
-                if (Global.incorrectClickCounter > 2)
-                {
-					lightUpButton (currentName);
-                }
-                incorrectClick(name);
             }
         }
     }
 
-    public void incorrectClick(string buttonName) {
+    public void ButtonLookedAt(string name) {
+        if (Global.currentScenario != null && !gameIsDone()) {
+            StartCoroutine(GazeCheck(name));
+        }
+    }
+
+    IEnumerator GazeCheck(string name) {
+        string currentName = Global.currentScenario[Global.count, 0];
+        bool ifGaze = Global.currentScenario[Global.count, 1] == "gaze";
+        if (name.Equals(currentName) && ifGaze) {
+            Global.count = Global.count + 1;
+
+            yield return new WaitForSecondsRealtime(1f);
+            setCanvasTexts();
+            lightOffButton(currentName);
+            correctClick(name);
+        }
+    }
+
+    public void incorrectClick(string buttonName, string currentName) {
+        Global.incorrectClickCounter = Global.incorrectClickCounter + 1;
+        if (Global.incorrectClickCounter > 2) {
+            lightUpButton(currentName);
+        }
 		incorrectSound.Play();
         StartCoroutine(BlinkButton(buttonName, false));
     }
@@ -57,7 +72,7 @@
 		correctSound.Play();
         StartCoroutine(BlinkButton(buttonName, true));
 
-		if (Global.currentScenario [Global.count, 1].Equals ("gaze")) {
+		if (!gameIsDone() && Global.currentScenario [Global.count, 1].Equals ("gaze")) {
 			StartCoroutine (GazeHelp (Global.currentScenario [Global.count, 0]));
 		}
     }
@@ -87,39 +102,37 @@
         }
     }
 
-	public void lightOffButton(string currentName){
+	public void lightOffButton(string currentName) {
 		Renderer rend = GetComponent<Renderer>();
 		(GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
 		Global.incorrectClickCounter = 0;
 	}
 
-	public void lightUpButton(string currentName){
+	public void lightUpButton(string currentName) {
 		buttonClickedText.text = "Look Around to find a hint!";
 		Renderer rend = GetComponent<Renderer>();
 		(GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = true;
 	}
 
-    public void ButtonLookedAt(string name)
-    {
-        if (Global.currentScenario != null) {
-            StartCoroutine(GazeCheck(name));
-        }
-    }
-
-    IEnumerator GazeCheck(string name) {
-        string currentName = Global.currentScenario[Global.count, 0];
-        bool ifGaze = Global.currentScenario[Global.count, 1] == "gaze";
-        if (name.Equals(currentName) && ifGaze)
-        {
-            yield return new WaitForSecondsRealtime(1f);
-    
-            Global.count = Global.count + 1;
+    public void setCanvasTexts() {
+        if (!gameIsDone()) {
+            ProgressCanvas.enabled = true;
+            countCanvasText.text = Global.count.ToString() + " / " + (Global.currentScenario.Length / Global.itemSize).ToString();
+            buttonClickedText.color = blackColor;
             buttonClickedText.text = Global.currentScenario[Global.count, 2];
-            Renderer rend = GetComponent<Renderer>();
-            (GameObject.Find(currentName).GetComponent("Halo") as Behaviour).enabled = false;
-            Global.incorrectClickCounter = 0;
-            correctClick(name);
+        } else {
+            ProgressCanvas.enabled = false;
         }
+	}
+
+    public bool gameIsDone() {
+        bool done = (Global.currentScenario.Length / Global.itemSize) == Global.count;
+        if (done) {
+            buttonClickedText.text = "Good Job! Select a new scenario!";
+            buttonClickedText.color = correctColor;
+            MenuCanvasController.Show(SelectScenarioCanvas);
+        }
+        return done;
     }
 
 }

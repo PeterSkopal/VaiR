@@ -135,10 +135,40 @@ public class Global : MonoBehaviour
 				"Next: Master FIRE WARN light – Push"},
 
 				{"master_fire_warn", "gaze",
-				"Verify that the master FIRE WARN lights are extinguished."},//här
+				"Verify that the master FIRE WARN lights are extinguished"},
+
+				{"fwd_aft_det_fault_lights", "gaze",
+				"Verify that the FWD and AFT lights stay illuminated"},
+
+				{"fwd_aft_det_fault_lights", "gaze",
+				"Verify that the DETECTOR FAULT light stays extinguished"},
+
+				{"test_lights", "gaze",
+				"Verify that the green EXTINGUISHER test lights stay illuminated"},
+
+				// {"disch", "gaze", // @ToDo
+				// "Verify that the DISCH light stays illuminated"},
 
 				{"apu_start", "button",
 				"Next: APU – Start if needed."},
+
+				{"transfer_bus_lights", "gaze",
+				"Verify that the TRANSFER BUS OFF lights are extinguished"},
+
+				{"standby_pwr_off_lights", "gaze",
+				"Verify that the STANDBY PWR OFF light is extinguished"},
+
+				{"maint_oil_fault_speed", "gaze",
+				"Verify that the APU MAINT light is extinguished"},
+				
+				{"maint_oil_fault_speed", "gaze",
+				"Verify that the APU LOW OIL PRESSURE light is extinguished"},
+
+				{"maint_oil_fault_speed", "gaze",
+				"Verify that the APU FAULT light is extinguished"},
+
+				{"maint_oil_fault_speed", "gaze",
+				"Verify that the APU OVERSPEED light is extinguished"},
 
 				{"apu_gen_bus_2", "button",
 				"Next: APU GENERATOR bus switches 2 - ON"},

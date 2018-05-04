@@ -16,7 +16,7 @@
 
     public void ButtonClicked(string name)
     {	
-        if (Global.currentScenario == null || (Global.currentScenario.Length / Global.itemSize) == Global.count)
+        if (Global.currentScenario == null)
         {
             buttonClickedText.text = "Select a new scenario!";
         }
@@ -25,12 +25,12 @@
             string currentName = Global.currentScenario[Global.count,0];
             if (name.Equals(currentName))
             {
-                Global.count = Global.count + 1;
-                if (Global.count == Global.currentScenario.Length / 2) {
+                if ((Global.currentScenario.Length / Global.itemSize) - 1 == Global.count) {
                     buttonClickedText.text = "Good Job! Select a new scenario!";
                     buttonClickedText.color = correctColor;
                     MenuCanvasController.Show(SelectScenarioCanvas);
                 } else {
+                    Global.count = Global.count + 1;
                     buttonClickedText.text = Global.currentScenario[Global.count, 2];
                 }
 				lightOffButton (currentName);
@@ -45,7 +45,6 @@
                 }
                 incorrectClick(name);
             }
-            print(Global.incorrectClickCounter);
         }
     }
 

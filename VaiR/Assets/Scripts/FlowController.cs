@@ -18,7 +18,7 @@
 	public AudioSource correctSound, incorrectSound;
 
     void Start () {
-        ProgressCanvas.enabled = false;
+     //   ProgressCanvas.enabled = false;
     }
 
     public void ButtonClicked(string name) {

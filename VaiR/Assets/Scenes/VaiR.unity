@@ -471,13 +471,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClickedText: {fileID: 1651787882}
-  countCanvasText: {fileID: 1100436071}
+  countCanvasText: {fileID: 0}
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
-  ProgressCanvas: {fileID: 1885492303}
+  SelectScenarioCanvas: {fileID: 0}
+  ProgressCanvas: {fileID: 0}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
 --- !u!122 &32924023
@@ -591,7 +591,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -751,7 +751,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -1533,7 +1533,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -1778,6 +1778,8 @@ MonoBehaviour:
   SelectModeCanvas: {fileID: 954255856}
   SelectScenarioCanvas: {fileID: 369837684}
   buttonClickedText: {fileID: 0}
+  countCanvasText: {fileID: 0}
+  ProgressCanvas: {fileID: 0}
 --- !u!114 &177356218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2438,7 +2440,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -2618,7 +2620,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -2790,7 +2792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &369837681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3682,7 +3684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &639754839
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4000,7 +4002,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -4189,13 +4191,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClickedText: {fileID: 1651787882}
-  countCanvasText: {fileID: 1100436071}
+  countCanvasText: {fileID: 0}
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
-  ProgressCanvas: {fileID: 1885492303}
+  SelectScenarioCanvas: {fileID: 0}
+  ProgressCanvas: {fileID: 0}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
 --- !u!122 &747192510
@@ -4546,7 +4548,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -5297,14 +5299,13 @@ GameObject:
   - component: {fileID: 935246893}
   - component: {fileID: 935246892}
   - component: {fileID: 935246891}
-  - component: {fileID: 935246890}
   m_Layer: 5
   m_Name: Reality
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &935246889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5324,20 +5325,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -86}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &935246890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 935246888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57ca3c5842ceff5489b50a10b4146f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SelectModeCanvas: {fileID: 954255856}
-  SelectScenarioCanvas: {fileID: 369837684}
-  buttonClickedText: {fileID: 0}
 --- !u!114 &935246891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5506,6 +5493,7 @@ RectTransform:
   - {fileID: 935246889}
   - {fileID: 639754839}
   - {fileID: 1417029428}
+  - {fileID: 1404771843}
   m_Father: {fileID: 1775235841}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6208,7 +6196,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -7262,7 +7250,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -7541,6 +7529,179 @@ Transform:
   m_Father: {fileID: 1816135721}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1404771842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1534839699020854, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1404771843}
+  - component: {fileID: 1404771849}
+  - component: {fileID: 1404771848}
+  - component: {fileID: 1404771847}
+  - component: {fileID: 1404771846}
+  - component: {fileID: 1404771845}
+  - component: {fileID: 1404771844}
+  m_Layer: 5
+  m_Name: Play
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1404771843
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224222505068500416, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0000031219245}
+  m_LocalScale: {x: 1.0000122, y: 1.0000119, z: 1.000012}
+  m_Children:
+  - {fileID: 1840519680}
+  m_Father: {fileID: 954255857}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000071525574, y: 97.99997}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1404771844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57ca3c5842ceff5489b50a10b4146f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectModeCanvas: {fileID: 954255856}
+  SelectScenarioCanvas: {fileID: 369837684}
+  buttonClickedText: {fileID: 1651787882}
+  countCanvasText: {fileID: 1100436071}
+  ProgressCanvas: {fileID: 1885492303}
+--- !u!114 &1404771845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114621676815850618, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!223 &1404771846
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223867175731805376, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1404771847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114009983005056320, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1404771848}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1404771848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114133224150508290, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1404771849
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222795399012792494, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404771842}
 --- !u!1 &1417029427
 GameObject:
   m_ObjectHideFlags: 0
@@ -7555,14 +7716,13 @@ GameObject:
   - component: {fileID: 1417029432}
   - component: {fileID: 1417029431}
   - component: {fileID: 1417029430}
-  - component: {fileID: 1417029429}
   m_Layer: 5
   m_Name: Instructional
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1417029428
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7583,20 +7743,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00008583069, y: 97.99997}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1417029429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1417029427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57ca3c5842ceff5489b50a10b4146f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SelectModeCanvas: {fileID: 954255856}
-  SelectScenarioCanvas: {fileID: 369837684}
-  buttonClickedText: {fileID: 0}
 --- !u!114 &1417029430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8100,7 +8246,7 @@ GameObject:
   - component: {fileID: 1525745123}
   - component: {fileID: 1525745122}
   m_Layer: 5
-  m_Name: NewScenarioCanvas
+  m_Name: RestartScenarioCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8641,7 +8787,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info text
+  m_Text: 
 --- !u!222 &1651787883
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8850,7 +8996,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -9174,7 +9320,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -10115,7 +10261,7 @@ MonoBehaviour:
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
   SelectScenarioCanvas: {fileID: 0}
-  ProgressCanvas: {fileID: 0}
+  ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
 --- !u!114 &1839158169 stripped
@@ -10130,6 +10276,84 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 866473454}
   m_Script: {fileID: 11500000, guid: 99cfb00d8802be6408525de42bd86f96, type: 3}
+--- !u!1 &1840519679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1803721789662624, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1840519680}
+  - component: {fileID: 1840519682}
+  - component: {fileID: 1840519681}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1840519680
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224508911265330830, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840519679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1404771843}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0000013658423, y: -16.639755}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1840519681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114402916762507216, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840519679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Play
+--- !u!222 &1840519682
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222189005034557650, guid: 67b0144ca2ebdac43a1bc130b1706a6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840519679}
 --- !u!114 &1863333401 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114446951213822372, guid: c4a9bb1eb0de44bc0a76a722344cce8c,
@@ -10373,7 +10597,7 @@ MonoBehaviour:
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   transparentColor: {r: 0, g: 0, b: 0, a: 0}
   blackColor: {r: 0, g: 0, b: 0, a: 1}
-  SelectScenarioCanvas: {fileID: 369837684}
+  SelectScenarioCanvas: {fileID: 0}
   ProgressCanvas: {fileID: 1885492303}
   correctSound: {fileID: 169858964}
   incorrectSound: {fileID: 1538609599}
@@ -10446,7 +10670,7 @@ GameObject:
   - component: {fileID: 1909969994}
   - component: {fileID: 1909969997}
   m_Layer: 5
-  m_Name: NewScenarioButton
+  m_Name: RestartScenarioButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10559,6 +10783,8 @@ MonoBehaviour:
   SelectModeCanvas: {fileID: 954255856}
   SelectScenarioCanvas: {fileID: 369837684}
   buttonClickedText: {fileID: 1651787882}
+  countCanvasText: {fileID: 1100436071}
+  ProgressCanvas: {fileID: 1885492303}
 --- !u!1001 &1919913832
 Prefab:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class ButtonController : MonoBehaviour {
 	public Canvas SelectModeCanvas;
 	public Canvas SelectScenarioCanvas;
 	public Text buttonClickedText;
+	public Text countCanvasText;
+	public Canvas ProgressCanvas;
 	// Use this for initialization
 	void Start () {
 		button = GetComponent<Button>();
@@ -25,11 +27,35 @@ public class ButtonController : MonoBehaviour {
             case "NewScenarioButton":
                 button.onClick.AddListener(TaskOnClickSelectScenario);
                 break;
+			case "RestartScenarioButton":
+				button.onClick.AddListener(TaskOnClickRestartScenario);
+				break;
+			case "Play":
+				button.onClick.AddListener(TaskOnClickPlay);
+				break;
             default:
                 print("Button not found");
                 break;
         }
  
+	}
+
+	void TaskOnClickRestartScenario () {
+		Global.count = 0;
+		Global.incorrectClickCounter = 0;
+		countCanvasText.text = Global.count.ToString() + " / " + (Global.currentScenario.Length / Global.itemSize).ToString();
+		buttonClickedText.text = Global.currentScenario[Global.count, 2];
+		//MenuCanvasController.Show(SelectScenarioCanvas);
+	}
+
+	void TaskOnClickPlay () {
+		Global.setScenario (0);
+		Global.count = 0;
+		ProgressCanvas.enabled = true;
+		countCanvasText.text = Global.count.ToString() + " / " + (Global.currentScenario.Length / Global.itemSize).ToString();
+		buttonClickedText.text = Global.currentScenario[Global.count, 2];
+		MenuCanvasController.Hide(SelectModeCanvas);
+		//MenuCanvasController.Show(SelectScenarioCanvas);
 	}
 
 	void TaskOnClickInstructional () {
